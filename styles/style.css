@@ -259,8 +259,6 @@ button a {
 
 button:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .sign-up-button {
@@ -269,6 +267,13 @@ button:hover {
   color: white;
   letter-spacing: 1px;
   text-transform: uppercase;
+  position: relative;
+  width: 150px;
+}
+
+.sign-up-button:hover {
+  background-color: #b3902d;
+  border-color: #b3902d;
 }
 
 .testimonials .testimonial-box {
