@@ -264,8 +264,8 @@ button:hover {
 }
 
 .sign-up-button {
-  background-color: #af2323;
-  border-color: #af2323;
+  background-color: #a07c18;
+  border-color: #a07c18;
   color: white;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -534,12 +534,12 @@ footer .right-footer p {
   margin: 10px 0;
   font-size: 15px;
   padding: 0 10px;
-  border-bottom: #966e00 !important;
+  border-bottom: #a07c18 !important;
   border-bottom-style: solid !important;
   border-bottom: 3;
   border-bottom-width: 3px !important;
   border: none;
-  background-color: #ddb33e;
+  background-color: #ecc352;
 }
 
 #contact input:-internal-autofill-previewed {
