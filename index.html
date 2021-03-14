@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> </meta>
+        <title> TC United </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        
+    </head>
+    <body>
+        <header> 
+            <img src="/images/TC-united-logo.png" alt="logo" class="web-logo"/>
+            <div class="menu-btn"> 
+                <div class="btn-line"></div> 
+                <div class="btn-line"></div> 
+                <div class="btn-line"></div> 
+            </div> 
+        
+            <nav class="menu"> 
+                <div class="menu-branding"> 
+                    <div class="portrait"> 
+                        <img src="/images/TC-united-logo.png" alt="" /> 
+                    </div> 
+                </div> 
+        
+                <!-- <ul class="menu-nav"> 
+                    <li class="nav-item current"> 
+                        <a href="/home.html" class="nav-link"> 
+                            HOME</a> 
+                    </li> 
+        
+                    <li class="nav-item"> 
+                        <a href="/staff.html" class="nav-link"> 
+                            Staff</a> 
+                    </li> 
+        
+                    <li class="nav-item"> 
+                        <a href="/sign-up.html" class="nav-link"> 
+                            Sign up</a> 
+                    </li> 
+        
+                    
+                </ul>  -->
+            </nav> 
+        </header> 
+        <div id="sign-up">
+            <!-- <img src="images/side.png" class="side-image"/> -->
+            <form method="POST" id="contact" action="https://formspree.io/f/mayllaqz">
+                <div class="tryouts">
+                    <h1> Sign Up for Tryouts </h1>
+                    <p> Use this form to reserve your spot in tryouts. Fee is $50, which will cover field space. </p>
+                </div>
+                <div class="wrapper">
+                    <div class="group">
+                        <input class="input" id="name" name="name" tabIndex="1" required/>
+                        <label for="name"> Player's Name</label>
+                    </div>
+                    <div class="group">
+                        <input class="input" id="email" name="email" tabIndex="2" required/>
+                        <label for="email"> Email Address</label>
+                    </div>
+                    </div>
+                    <div class="address">
+                    <div class="group">
+                        <input class="input" id="address" name="address" tabIndex="3"/>
+                        <label for="address"> Address</label>
+                    </div>
+                    <div class="group">
+                        <input class="input" id="phone" name="phone" tabIndex="5"/>
+                        <label for="phone"> Phone</label>
+                    </div>
+                    <div class="group">
+                        <input class="input" id="address-2" name="address-2" tabIndex="4"/>
+                        <label for="address-2"> Address Street 2</label>
+                    </div>
+                    <div class="group">
+                        <input class="input" id="city" name="city" tabIndex="6"/>
+                        <label for="city"> City</label>
+                    </div>
+                    <div class="group state">
+                        <input class="input" id="state" name="state" tabIndex="7"/>
+                        <label for="state"> State</label>
+                    </div>
+                    <div class="group" style="display: flex; flex-basis: 20%;">
+                        <div style="margin-right: 20px; width: 100px;">
+                            <input class="input" style="padding-left: 10px;" id="Feet" name="Feet" tabIndex="7" placeholder="Feet"/>
+                            <label for="Feet"> Height </label>
+                        </div>
+                        <div style="width: 100px;">
+                            <input class="input" style="padding-left: 10px;" id="inches" name="inches" tabIndex="7" placeholder="Inches"/>
+                            <label for="inches"> </label>
+                        </div>
+                    </div>
+                    <div class="group"  style="display: flex; flex-basis: 10%;">
+                        <div style="width: 100px;">
+                            <input class="input" id="weight" name="weight" tabIndex="7"/>
+                            <label for="weight"> Weight </label>
+                        </div>
+                    </div>
+                    <div class="group"  style="display: flex;">
+                        <div>
+                            <select class="input" id="Position" name="Position" tabIndex="7">
+                                <option value="Attack">Attack</option>
+                                <option value="Midfield">Midfield</option>
+                                <option value="Faceoff">Faceoff</option>
+                                <option value="Defense">Defense</option>
+                                <option value="Goalie">Goalie</option>
+                            </select>
+                            <label for="Position"> Position </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <textarea class="input" id="message" name="message" tabIndex="8" style="padding: 10px !important;"></textarea>
+                    <label for="message"> Message</label>
+                </div>
+                <div class="group">
+                    <input type="hidden" name="_next" value="./thankyou.html"/>
+                    <button type="submit" class="sign-up-button">Submit </button>
+                </div>
+            </form>
+        </div>
+        
+        <div w3-include-html="footer.html"></div>
+        <script src="app.js"></script>
+        <script> includeHTML(); </script>
+        <script src="nav.js"></script>
+
+    </body>
+</html>
+
+

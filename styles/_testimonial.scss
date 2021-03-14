@@ -1,0 +1,32 @@
+.testimonials {
+    // background-image: url('/images/testimonial.png');
+    // width: 100vw;
+    // height: 400px;
+    // background-size: cover;
+    // background-position: center;
+    //transform: rotate(90deg);
+    .testimonial-box {
+        width: 55vw;
+        height: 300px;
+        background-color: rgb(19, 19, 19);
+        border-radius: 10px;
+        display: flex;
+        align-content: center;
+        padding: 50px;
+        box-shadow: 6px 6px 20px;
+        .quote {
+            font-size: 200px;
+            font-family: cursive;
+            width: fit-content;
+            margin-right: 52px;
+            margin-top: -77px;
+            margin-left: -20px;
+            // hr {
+            //     border: 0;
+            // }
+        }
+        .quote, p {
+            color: white;
+        }
+    }
+}

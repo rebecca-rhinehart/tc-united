@@ -1,0 +1,90 @@
+.events {
+    display: flex;
+    max-width: 1180px;
+    margin: auto;
+    padding: 50px 20px;
+    position: relative;
+    justify-content: space-around;
+    
+    p {
+        max-width: 400px;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .buttonfx {
+        background: transparent;
+        position: relative;
+        overflow: hidden;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        border-color: rgb(99,119, 113);
+        &:hover {
+            transform: scale(1);
+        }
+        a {
+            text-transform: uppercase;
+        }
+    }
+
+      .buttonfx:before,
+.buttonfx:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background:rgb(99,119, 113); /* onhover background color */
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+}
+
+.slideleft:after{
+  top: 0;
+  z-index: -1;
+  transform: translate3D(-101%,0,0);
+}
+
+.slideleft:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+    
+
+    .watermark-number {
+        font-family: 'futura', sans-serif;
+        position: absolute;
+        font-size: 300px;
+        top: 0;
+        left: 350px;
+        opacity: .1;
+    }
+    .image {
+        img {
+            position: relative;
+            z-index: 1;
+        }
+    }
+    .white-box {
+        width: 100px;
+        height: 97px;
+        position: absolute;
+        background-color: black;
+        right: 100px;
+        top: 233px;
+        z-index: 0;
+        opacity: .2;
+    }
+    // @media screen and (min-width: 768px) {
+    //     h1 {
+    //         font-size: 2em;
+    //     }
+    //     p {
+    //         font-size: 16px;
+    //     }
+    // }
+    
+}

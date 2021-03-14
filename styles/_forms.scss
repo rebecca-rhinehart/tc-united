@@ -1,0 +1,94 @@
+#sign-up {
+    // display: flex;
+    // .side-image {
+    //     width: 50vw;
+    //     object-fit: cover;
+    //     display: none;
+    //     @media (min-width: 767px) {
+    //         display: block;
+    //     }
+    // }
+}
+#contact {
+    max-width: 1050px;
+    margin: 5vh auto 8vh;
+    padding: 0 70px;
+    @media (max-width: 640px) {
+      padding: 0 20px !important;
+    }
+    @media screen and (max-width: 1080px) {
+      padding: 0 40px;
+    }
+    .tryouts {
+        h1 {
+            font-family: 'roboto-light', sans-serif;
+        }
+        p {
+          color: black;
+        }
+    }
+    h3 {
+      padding: 0 20px;
+      margin: 40px 0;
+      max-width: 900px;
+    }
+    .input {
+      border: 1px solid gray;
+      background-image: none !important;
+      border-radius: 5px;
+      width: -webkit-fill-available;
+      height: 40px;
+      margin: 10px 0;
+      font-size: 15px;
+      padding: 0 10px;
+    }
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      @media(min-width: 400px) {
+        flex-wrap: nowrap;
+      }
+    }
+    .address {
+      display: flex;
+      flex-flow: wrap;
+      .group {
+        flex-basis: 100%;
+        @media(min-width: 400px) {
+          flex-basis: 33%;
+        }
+      }
+      .state {
+        flex-basis: 5%;
+        input {
+          max-width: 40px;
+          padding-left: 25px;
+          font-size: larger;
+        }
+      }
+    }
+    .group {
+      width: -webkit-fill-available;
+      margin-bottom: 15px;
+      padding-right: 20px;
+    }
+    textarea {
+      height: 150px !important;
+    }
+    button {
+      margin-top: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+
+.home {
+  #contact {
+    position: relative;
+    label, h1, p {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.staff-section {
+    .staff-member, .staff-member-2 {
+        padding-top: 40px;
+        background-color:#f3f3f3;
+        .staff {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            h1 {
+                font-size: 48px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+            h2 {
+                font-size: 35px;
+                margin: 10px 0 25px 0;
+                font-weight: 100;
+            }
+            button {
+                width: 200px;
+                background-color: #3f85c1;
+                color: white;
+                border-color: #3f85c1;
+                text-transform: uppercase;
+                font-weight: bolder;
+            }
+            .bio-paragraph {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                left: 19vw;
+                height: 0;
+                width: 0;
+            }
+            
+            .active {
+                //position: absolute;
+                animation: slidein 2s;
+                animation-fill-mode: forwards;
+                //animation-duration: 5s;
+            }
+            .clicked {
+                opacity: 1;
+                visibility: visible;
+                height: 35%;
+                width: 35%;
+                transition: opacity 5s;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .staff-member-2 {
+        background-color: white;
+        
+    }
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 0%;
+    }
+  
+    to {
+      margin-left: 74%;
+    }
+  }

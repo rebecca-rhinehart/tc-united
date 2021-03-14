@@ -1,0 +1,174 @@
+@media (min-width: 500px) {
+    nav {
+        background-color: black;
+        justify-content: space-between;
+        display: flex;
+        //box-shadow: 0px 6px 20px 0px;
+        width: 100vw;
+        //position: fixed;
+        img {
+            width: 60px;
+            padding: 20px 0 20px 40px;
+        }
+        ul {
+            display: flex;
+            align-self: center;
+            padding: 20px;
+            li {
+                list-style: none;
+                color: white;
+                margin-right: 30px;
+                font-size: 18px;
+                a {
+                    color: white;
+                    font-family: 'roboto-light', sans-serif;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .menu-btn { 
+            position: absolute; 
+            z-index: 3; 
+            right: 35px; 
+            top: 43px; 
+            cursor: pointer; 
+            transition: all 0.5s ease-out; 
+        } 
+    
+        /* Styling the hamburger lines */
+        .menu-btn .btn-line { 
+            width: 28px; 
+            height: 3px; 
+            margin: 0 0 5px 0; 
+            background: white; 
+            transition: all 0.5s ease-out; 
+        } 
+
+        .menu-btn.close .btn-line:nth-child(1) { 
+            transform: rotate(45deg) translate(5px, 5px); 
+        } 
+
+        .menu-btn.close .btn-line:nth-child(2) { 
+            opacity: 0; 
+        } 
+
+        .menu-btn.close .btn-line:nth-child(3) { 
+            transform: rotate(-45deg) translate(7px, -6px); 
+        } 
+    }
+}
+
+
+.web-logo {
+    width: 50px;
+    height: 50px;
+    padding: 20px 20px 20px 35px;
+    @media (min-width: 500px) {
+        display: none;
+    }
+}
+
+@media (max-width: 499px) {
+
+    header {
+        background-color: black;
+        
+        .nav-item {
+            padding-bottom: 20px;
+            .nav-link {
+                text-transform: uppercase;
+                color: white;
+                font-family: 'roboto', sans-serif;
+            }
+        }
+    }
+    
+        
+
+    /* Styling the menu button */
+    .menu-btn { 
+        position: absolute; 
+        z-index: 3; 
+        right: 35px;
+        top: 35px;
+        cursor: pointer; 
+        transition: all 0.5s ease-out; 
+    } 
+
+    /* Styling the hamburger lines */
+    .menu-btn .btn-line { 
+        width: 28px; 
+        height: 3px; 
+        margin: 0 0 5px 0; 
+        background: white; 
+        transition: all 0.5s ease-out; 
+    } 
+
+    /* Adding tranform to the X */
+    .menu-btn.close { 
+        transform: rotate(180deg); 
+    } 
+
+    /* Styling the three lines  
+        to make it an X */
+    .menu-btn.close .btn-line:nth-child(1) { 
+        transform: rotate(45deg) translate(5px, 5px); 
+    } 
+
+    .menu-btn.close .btn-line:nth-child(2) { 
+        opacity: 0; 
+    } 
+
+    .menu-btn.close .btn-line:nth-child(3) { 
+        transform: rotate(-45deg) translate(7px, -6px); 
+    } 
+
+    /* Styling the position of the menu icon */
+    .menu { 
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        opacity: 1; 
+        visibility: hidden; 
+        
+    } 
+
+
+    .menu.show { 
+        visibility: visible;
+        padding: 20px 0 0 35px;
+        height: 100vh;
+        background-color: black;
+    } 
+
+    /* Adding a transition delay to the 
+    4 items in the navigation menu */
+    .nav-item:nth-child(1) { 
+        transition-delay: 0.1s; 
+    } 
+
+    .nav-item:nth-child(2) { 
+        transition-delay: 0.2s; 
+    } 
+
+    .nav-item:nth-child(3) { 
+        transition-delay: 0.3s; 
+    } 
+
+    .nav-item:nth-child(4) { 
+        transition-delay: 0.4s; 
+    } 
+
+    // .show {
+        
+        .portrait {
+            padding-bottom: 30px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    // }
+}

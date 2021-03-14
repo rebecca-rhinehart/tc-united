@@ -1,0 +1,66 @@
+footer {
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    //width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    position: relative;
+    //just because the contact page is the home page right now - otherwise take this off
+    justify-content: flex-end;
+    @media (min-width: 500px) {
+        flex-direction: unset;
+        align-items: unset;
+    }
+    li {
+        list-style: none;
+        margin-bottom: 8px;
+        text-align: center;
+        @media (min-width: 500px) {
+            text-align: left;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            font-family: 'roboto-light', sans-serif;
+        }
+    }
+    hr {
+        width: 73vw;
+        border-width: .5px;
+        margin: 20px 0;
+        @media (min-width: 500px) {
+            display: none;
+        }
+    }
+    .middle-footer {
+        position: absolute;
+        // top: 1900px;
+        // right: 600px;
+    }
+    .right-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 500px) {
+            align-items: flex-end;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 0;
+            margin-top: 5px;
+            color: white;
+            font-family: 'roboto-light', sans-serif;
+        }
+        // img {
+        //     text-align: right;
+        // }
+    }
+}

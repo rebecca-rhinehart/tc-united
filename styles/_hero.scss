@@ -1,0 +1,46 @@
+.hero {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    @media(min-width: 992px) {
+        padding-top: 100px;
+        flex-direction: row;
+    }
+    
+    img {
+        object-fit: contain;
+        display: none;
+        @media screen and (min-width: 992px) {
+            width: 600px;
+            display: initial;
+        }
+    }
+    .hero-content {
+        padding: 20px;
+        @media screen and (min-width: 992px) {
+            width: 42%;
+            padding: 50px;
+        }
+        
+        h1, p {
+            font-family: 'roboto-light', sans-serif;
+            color: white;
+        }
+        h1 {
+            font-size: 4em;
+            font-weight: 100;
+            margin: 0;
+            font-weight: 800;
+            @media screen and (min-width: 992px) {
+                font-size: 88px;
+                text-align: left;
+            }
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+    
+}
