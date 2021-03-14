@@ -528,14 +528,22 @@ footer .right-footer p {
 }
 
 #contact .input {
-  border: 1px solid gray;
   background-image: none !important;
-  border-radius: 5px;
   width: -webkit-fill-available;
   height: 40px;
   margin: 10px 0;
   font-size: 15px;
   padding: 0 10px;
+  border-bottom: #966e00 !important;
+  border-bottom-style: solid !important;
+  border-bottom: 3;
+  border-bottom-width: 3px !important;
+  border: none;
+  background-color: #ddb33e;
+}
+
+#contact input:-internal-autofill-previewed {
+  background-color: #ddb33e !important;
 }
 
 #contact .wrapper {
@@ -701,53 +709,6 @@ footer .right-footer p {
   top: 233px;
   z-index: 0;
   opacity: .2;
-}
-
-.owl-carousel {
-  background-color: rgba(99, 119, 113, 0.9);
-  padding-top: 50px;
-}
-
-.owl-item {
-  margin-bottom: 0;
-}
-
-.owl-item .quote {
-  font-size: 200px;
-  position: absolute;
-  color: white;
-  font-family: cursive;
-  top: -71px;
-  left: 310px;
-  opacity: .3;
-}
-
-.owl-item .item {
-  padding: 30px;
-  width: 1180px;
-  margin: auto;
-}
-
-.owl-item p {
-  color: white;
-  width: 80%;
-  margin: auto;
-  font-size: 30px;
-  letter-spacing: 2px;
-  line-height: 33px;
-  font-family: cabin;
-}
-
-.owl-nav {
-  display: none;
-}
-
-.owl-dots {
-  padding: 20px 0;
-}
-
-.owl-dots .owl-dot:focus {
-  outline: none !important;
 }
 
 body {

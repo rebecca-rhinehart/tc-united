@@ -91,30 +91,4 @@ function includeHTML() {
     }
   }
 
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    //margin:64,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        // 600:{
-        //     items:3
-        // },
-    },
-    // autoplay:true,
-    // autoplayTimeout:3500,
-    // autoplayHoverPause:true
-});
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[1000])
-})
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-})
-
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
-
+  

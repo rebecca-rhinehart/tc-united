@@ -33,14 +33,29 @@
       max-width: 900px;
     }
     .input {
-      border: 1px solid gray;
+      // border: 1px solid gray;
       background-image: none !important;
-      border-radius: 5px;
+      // border-radius: 5px;
       width: -webkit-fill-available;
       height: 40px;
       margin: 10px 0;
       font-size: 15px;
       padding: 0 10px;
+      // box-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
+      border-bottom: #966e00 !important;
+    border-bottom-style: solid !important;
+    border-bottom: 3;
+    border-bottom-width: 3px !important;
+    border: none;
+    background-color: #ddb33e;
+      // &:focus {
+      //   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+      //   outline-color: #ddb33e;
+      // }
+      
+    }
+    input:-internal-autofill-previewed {
+      background-color:  #ddb33e !important;
     }
     .wrapper {
       display: flex;
