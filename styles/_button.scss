@@ -1,12 +1,11 @@
 button {
-    background-color: #ddb33e;
-    // background-color:  rgb(99,119, 113);
-    border-width: 2px;
-    border-color:#ddb33e;
-    // border-color:rgb(99,119, 113);
+    background-color: #b3902d;
+    border-color: #b3902d;  
+    border-width: 2px; 
     border-radius: 4px;
     padding: 10px 20px;
     font-size: 16px;
+    color: white;
     a {
         text-decoration: none;
         font-size: 18px;
@@ -29,4 +28,45 @@ button {
         background-color: #b3902d;
         border-color: #b3902d;        
     }
+}
+
+.buttonfx {
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border-color: #dfb53f;
+    margin-top: 10px;
+    // a:hover {
+    //     color: black;
+    // }
+    a {
+        text-transform: uppercase;
+    }
+}
+
+.buttonfx:before,
+.buttonfx:after{
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+height: 100%;
+background:#dfb53f; /* onhover background color */
+transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+transition: all .5s;
+}
+
+.slideleft:after{
+top: 0;
+z-index: -1;
+transform: translate3D(-101%,0,0);
+}
+
+.slideleft:hover:after{
+transform: translate3D(0,0,0);
+transition: all .5s;
 }

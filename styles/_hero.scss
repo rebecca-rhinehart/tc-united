@@ -1,46 +1,61 @@
 .hero {
-    background-color: black;
+    background-color: rgb(19, 19, 19);
     width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column-reverse;
-    @media(min-width: 992px) {
-        padding-top: 100px;
-        flex-direction: row;
-    }
-    
-    img {
-        object-fit: contain;
-        display: none;
-        @media screen and (min-width: 992px) {
-            width: 600px;
-            display: initial;
-        }
-    }
-    .hero-content {
+    position: relative;
+    z-index: 1;
+    .container {
+        max-width: 1180px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
         padding: 20px;
-        @media screen and (min-width: 992px) {
-            width: 42%;
-            padding: 50px;
+        @media(min-width: 768px) {
+            padding: 60px 30px;
+            flex-direction: row;
         }
-        
-        h1, p {
-            font-family: 'roboto-light', sans-serif;
-            color: white;
-        }
-        h1 {
-            font-size: 4em;
-            font-weight: 100;
-            margin: 0;
-            font-weight: 800;
-            @media screen and (min-width: 992px) {
-                font-size: 88px;
-                text-align: left;
+        img {
+            object-fit: contain;
+            
+            width: 250px;
+            @media screen and (min-width: 768px) {
+                width: 400px;
             }
         }
-        p {
-            font-size: 1em;
+        .hero-content {
+            padding: 20px;
+            text-align: center;
+            @media screen and (min-width: 992px) {
+                width: 42%;
+                padding: 50px;
+                text-align: left;
+            }
+            
+            h1, p {
+                font-family: 'roboto-light', sans-serif;
+                color: white;
+            }
+            h1 {
+                font-size: 2em;
+                font-weight: 100;
+                margin: 0;
+                font-weight: 500;
+                text-transform: capitalize;
+                @media screen and (min-width: 992px) {
+                    font-size: 60px;
+                    text-align: left;
+                    font-size: 4em;
+                }
+            }
+            p {
+                font-size: 16px;
+            }
         }
     }
-    
+    button {
+        margin-top: 5px;
+        background-color: rgb(196, 58, 58);
+        border-color: rgb(196, 58, 58);
+    }
 }

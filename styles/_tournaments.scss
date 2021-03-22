@@ -1,0 +1,42 @@
+.tournaments {
+    background-color: #242424;
+    // border-top: 1px solid black;
+    // border-bottom: 1px solid black;
+    box-shadow: 1px 1px 16px 4px black;
+    position: relative;
+    padding: 20px 10px;
+    margin: 50px 0 50px 0;
+    h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+    }
+    .sections {
+        @media(min-width: 992px) {
+            // max-width: 1180px;
+            margin: auto;
+            justify-items: center;
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            max-width: 1180px;
+            justify-content: center;
+        }
+        .section {
+            text-align: center;
+            p {
+                text-align: center;
+            }
+        } 
+    }
+    
+    
+    img {
+        width: 250px;
+        border-radius: 6px;
+        &:hover {
+            box-shadow: 5px 4px 11px black;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}

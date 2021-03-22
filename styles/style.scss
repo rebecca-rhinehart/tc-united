@@ -7,6 +7,7 @@
 @import 'staff-section';
 @import 'forms';
 @import 'events';
+@import 'tournaments';
 
 body {
     margin: 0;
@@ -33,14 +34,25 @@ ul {
     margin: 0;
 }
 
-#triangle-up {
+.triangle-up {
     width: 0;
     height: 0;
-    border-left: 100vw solid transparent;
-    border-bottom: 1679px solid #d5a83b;
     position: absolute;
     right: 0;
-    opacity: 0.6;
+    opacity: 0.1;
+    border-left: 500vw solid transparent;
+    border-bottom: 3748px solid #d5a83b;
+    @media(min-width: 400px) {
+        border-bottom: 3395px solid #d5a83b;
+    }
+    @media(min-width: 500px) {
+        border-bottom: 3058px solid #d5a83b;
+    }
+    @media(min-width: 992px) {
+        opacity: .3;
+        border-left: 92vw solid transparent;
+        border-bottom: 1900px solid #d5a83b;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -50,5 +62,9 @@ ul {
 
   p, label {
       font-family: 'roboto-light', sans-serif !important;
+  }
+
+  .__lpform_name_icon {
+      display: none;
   }
 
