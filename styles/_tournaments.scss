@@ -1,11 +1,9 @@
 .tournaments {
     background-color: #242424;
-    // border-top: 1px solid black;
-    // border-bottom: 1px solid black;
     box-shadow: 1px 1px 16px 4px black;
     position: relative;
     padding: 20px 10px;
-    margin: 50px 0 50px 0;
+    margin: 50px 0 0 0;
     h2 {
         text-align: center;
         color: white;
@@ -13,7 +11,6 @@
     }
     .sections {
         @media(min-width: 992px) {
-            // max-width: 1180px;
             margin: auto;
             justify-items: center;
             display: grid;

@@ -827,7 +827,7 @@ footer .right-footer p {
           box-shadow: 1px 1px 16px 4px black;
   position: relative;
   padding: 20px 10px;
-  margin: 50px 0 50px 0;
+  margin: 50px 0 0 0;
 }
 
 .tournaments h2 {
@@ -906,18 +906,18 @@ ul {
   right: 0;
   opacity: 0.1;
   border-left: 500vw solid transparent;
-  border-bottom: 3748px solid #d5a83b;
+  border-bottom: 2000px solid #d5a83b;
 }
 
 @media (min-width: 400px) {
   .triangle-up {
-    border-bottom: 3395px solid #d5a83b;
+    border-bottom: 2000px solid #d5a83b;
   }
 }
 
 @media (min-width: 500px) {
   .triangle-up {
-    border-bottom: 3058px solid #d5a83b;
+    border-bottom: 2000px solid #d5a83b;
   }
 }
 
@@ -925,7 +925,7 @@ ul {
   .triangle-up {
     opacity: .3;
     border-left: 92vw solid transparent;
-    border-bottom: 1900px solid #d5a83b;
+    border-bottom: 1021px solid #d5a83b;
   }
 }
 
