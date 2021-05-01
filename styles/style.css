@@ -826,7 +826,7 @@ footer .right-footer p {
   -webkit-box-shadow: 1px 1px 16px 4px black;
           box-shadow: 1px 1px 16px 4px black;
   position: relative;
-  padding: 20px 10px;
+  padding: 30px 10px;
   margin: 50px 0 0 0;
 }
 
@@ -836,22 +836,27 @@ footer .right-footer p {
   margin-bottom: 50px;
 }
 
+.tournaments .sections {
+  text-align: -webkit-center;
+}
+
 @media (min-width: 992px) {
   .tournaments .sections {
     margin: auto;
     justify-items: center;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (33%)[3];
-        grid-template-columns: repeat(3, 33%);
-    max-width: 1180px;
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    grid-gap: 35px;
   }
 }
 
 .tournaments .sections .section {
+  max-width: 250px;
   text-align: center;
 }
 

@@ -2,7 +2,7 @@
     background-color: #242424;
     box-shadow: 1px 1px 16px 4px black;
     position: relative;
-    padding: 20px 10px;
+    padding: 30px 10px;
     margin: 50px 0 0 0;
     h2 {
         text-align: center;
@@ -10,15 +10,18 @@
         margin-bottom: 50px;
     }
     .sections {
+        text-align: -webkit-center;
         @media(min-width: 992px) {
             margin: auto;
             justify-items: center;
             display: grid;
-            grid-template-columns: repeat(3, 33%);
-            max-width: 1180px;
+            grid-template-columns: repeat(4, auto);
+            // max-width: 1180px;
             justify-content: center;
+            grid-gap: 35px;
         }
         .section {
+            max-width: 250px;
             text-align: center;
             p {
                 text-align: center;
