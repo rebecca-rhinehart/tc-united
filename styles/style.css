@@ -579,16 +579,6 @@ footer .right-footer p {
   margin-right: 0;
 }
 
-@media (min-width: 992px) {
-  #contact {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto);
-    grid-gap: 308px;
-  }
-}
-
 @media (max-width: 640px) {
   #contact {
     padding: 0 20px !important;
@@ -712,7 +702,7 @@ footer .right-footer p {
 }
 
 .home #contact label, .home #contact h1, .home #contact p {
-  color: white;
+  color: black;
 }
 
 #weight {
