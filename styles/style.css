@@ -843,15 +843,13 @@ footer .right-footer p {
 @media (min-width: 992px) {
   .tournaments .sections {
     margin: auto;
-    justify-items: center;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (auto)[4];
-        grid-template-columns: repeat(4, auto);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    grid-gap: 35px;
+    grid-gap: 45px;
   }
 }
 

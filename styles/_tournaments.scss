@@ -13,12 +13,9 @@
         text-align: -webkit-center;
         @media(min-width: 992px) {
             margin: auto;
-            justify-items: center;
-            display: grid;
-            grid-template-columns: repeat(4, auto);
-            // max-width: 1180px;
+            display: flex;
             justify-content: center;
-            grid-gap: 35px;
+            grid-gap: 45px;
         }
         .section {
             max-width: 250px;
