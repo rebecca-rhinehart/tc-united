@@ -1,6 +1,10 @@
 #sign-up {
     max-width: 1500px;
     margin: auto;
+    img {
+      object-fit: cover;
+      object-position: right;
+    }
 }
 #contact {
     margin: 12vh auto 8vh;

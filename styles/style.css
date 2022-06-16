@@ -573,6 +573,13 @@ footer .right-footer p {
   margin: auto;
 }
 
+#sign-up img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+
 #contact {
   margin: 12vh auto 8vh;
   padding: 0 70px;
